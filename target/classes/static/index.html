@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>bestAPI</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="javascript:" onsubmit="checkPassword()">
+    <div class="container">
+        <label for="loginName"><b>Username</b></label>
+        <input type="text" id="loginName" placeholder="Enter Username" name="uname" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="submit">Login</button>
+        <span id="loginInfo"></span>
+    </div>
+</form>
+</body>
+</html>

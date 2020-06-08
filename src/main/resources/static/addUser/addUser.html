@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>bestAPI - UserList</title>
+    <script src="addUser/addUser.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<div class="topnav">
+    <a href="/panel">Panel</a>
+    <a href="/userList">User list</a>
+    <a href="/addUser">Add User</a>
+    <a href="/devicesList">Device list</a>
+    <div class="topnav-right">
+        <a onclick="logout()">Logout</a>
+    </div>
+
+</div>
+
+<div class="main">
+    <div class="container">
+        <label for="loginName"><b>LoginName:</b></label>
+        <input type="text" id="loginName" placeholder="Enter LoginName" name="loginName" required>
+
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" placeholder="Enter Password" name="psw" required><br>
+
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="name" placeholder="Enter Name" name="name" required><br>
+
+        <label for="surname"><b>Surname:</b></label>
+        <input type="text" id="surname" placeholder="Enter Surname" name="surname" required><br>
+
+        <label for="age"><b>Age:</b></label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <button type="button" onclick="addUser()">Add User</button>
+        <button type="button" onclick="addUserAndGoList()">Add&GO to List</button>
+        <button type="button" onclick="cleanFields()">Clean fields</button>
+        <p id="addInfo"></p>
+    </div>
+</div>
+
+
+</html>
